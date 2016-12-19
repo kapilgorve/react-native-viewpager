@@ -123,7 +123,7 @@ var ViewPager = React.createClass({
             }
           }
         }else {
-          if (Math.abs(gestureState.dy) > Math.abs(gestureState.dx)) {
+          if (Math.abs(gestureState.dy) > 10 && Math.abs(gestureState.dy) > Math.abs(gestureState.dx)) {
             if (
             this.props.locked !== true && !this.fling) {
               this.props.hasTouch && this.props.hasTouch(true);
